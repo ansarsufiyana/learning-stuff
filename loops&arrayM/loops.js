@@ -23,12 +23,18 @@ let student = ['Steve',
 ];
 
 for (let i = 0; i < student.length; i++) {
-    if(i === 6){
+    if(student[i] === 'Crystal'){
         console.log(student[i]+ ' is the ' + 'toper' );
         continue;
     }
     console.log(student[i]);
 
+
+}
+
+for(let element of student){
+    if(element === 'Crystal') console.log(element + ' is the toper')
+    else console.log(element)
 }
 
 // for each loop

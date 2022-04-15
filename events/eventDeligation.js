@@ -5,9 +5,9 @@
 // // creating a ol list and using event delegation on it
 
 
-let myList = document.createElement('OL')
+let myList = document.createElement('ol')
 myList.id= 'friutlist'
-myList.innerHTML= '<li>Apple</li> <li>Bananas</li> <li>Tomotos</li>'
+myList.innerHTML= '<div>asdf</div> <li>Apple</li> <li>Bananas</li> <li>Tomotos</li>'
 
 
 
@@ -18,9 +18,11 @@ console.log(List);
 let friutList = document.getElementById('friutlist')
 friutList.addEventListener('click', function(e){
     console.log(e); 
+    
     let Target = e.target;
+    console.log(Target)
+    Target.style.backgroundColor = 'red';
     if(Target.matches("li")){
-        Target.style.backgroundColor = 'red';
     }
 })
 
@@ -28,4 +30,3 @@ friutList.addEventListener('click', function(e){
 let newli = document.createElement("li")
 newli.textContent = 'wrok'
 myList.appendChild(newli);
-
