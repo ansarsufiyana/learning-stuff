@@ -2,7 +2,7 @@
  //1 primitive 
  //in which we store data in variables, which can bi accesses by variable
  // 2 reference 
- //in which we store data in objects , which can bi accessed by reference
+ //in which we store data in objects, arrays , which can bi accessed by reference
 
 
  // there are six data types in primitive..
@@ -35,6 +35,7 @@ console.log(typeof sym);
 
 //reference types are..
 // these are all going to come back as objects
+
 //Arrays
 const array = ['love', '&' , 'war'];
 console.log(array);

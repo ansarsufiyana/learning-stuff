@@ -7,7 +7,7 @@
 
 let myList = document.createElement('ol')
 myList.id= 'friutlist'
-myList.innerHTML= '<div>asdf</div> <li>Apple</li> <li>Bananas</li> <li>Tomotos</li>'
+myList.innerHTML= '<li>Apple</li> <li>Bananas</li> <li>Tomotos</li>'
 
 
 
@@ -15,8 +15,7 @@ let List = document.getElementById('mylist')
 List.appendChild(myList)
 console.log(List);
 
-let friutList = document.getElementById('friutlist')
-friutList.addEventListener('click', function(e){
+myList.addEventListener('click', function(e){
     console.log(e); 
     
     let Target = e.target;
@@ -26,7 +25,7 @@ friutList.addEventListener('click', function(e){
     }
 })
 
-// // adding new li item
+// // adding new li item with same event on it
 let newli = document.createElement("li")
 newli.textContent = 'wrok'
 myList.appendChild(newli);

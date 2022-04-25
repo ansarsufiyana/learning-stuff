@@ -1,13 +1,13 @@
 // // synchronous
 // // code will start at top of the file
-// // execute all the way down bottom file line by line..
+// // execute all the way down to bottom of file line by line..
 
 
 // // asynchronous 
 // // code will also start from the top of the file and execute the way down.
 // // during the execution it will run into curtain 
-// //asynchronous code and function split off and execut the asynchronous code sparately from rest of the code and the 
-// //useually because it need wait and take time. 
+// //asynchronous code and function then it will split off and execut the asynchronous code sparately from rest of the code and it  
+// //useually because it need to wait and take time. 
 
 // // synchronous code
 
@@ -25,14 +25,14 @@ console.log(b);
 let c =1;
 
 setTimeout(() => {       // // async code
-    console.log('Async' + a);
+    console.log('Async ' + c);
 }, 2000);
 
-a= 10;
+c = 10;
 
-fetch('/').then(function(){      // // async code
-    console.log('fetch');
-})
+// fetch('/').then(function(){      // // async code
+//     console.log('fetch');
+// })
 
 console.log('synchronous');
 console.log(c);
@@ -45,7 +45,7 @@ console.log(c);
 
 
 
-// // async and callback..
+// // async and promises..
 
 const posts = [
   { title: "post one", body: "this is post one" },
