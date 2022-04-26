@@ -24,6 +24,17 @@ var arrayOfObjects = [
 // // for each helper
 // // using for each to iterate the given array
 
+// let presentAll = [];
+// function rollCall(student, index) {
+//   let callRoll = `The number ${index + 1} student is ${student.names}. age  ${student.age}. from ${student.location} present? Yes!`;
+//   presentAll[index] = callRoll;
+// }
+
+// arrayOfObjects.forEach((names, index) => rollCall(names, index));
+// console.log(presentAll);
+
+
+
 // let sum = 0;
 // arrayOfObjects.forEach(function (e) {
 // //   e;
@@ -33,12 +44,27 @@ var arrayOfObjects = [
 // console.log(sum);
 
 // //map helper
+// // Map takes a function and applies that function to each element in the array. 
 // // using map helper to get the person's by there location
 
 // let selectedKeys = arrayOfObjects.map(({names, age}) => ({[names]: age}));
 // console.log(selectedKeys);
 
 // // filter
+// // The way the filter() method works is very simple. It entails filtering out one or more items (a subset) from a larger collection of items (a superset) 
+// //based on some condition/preference
+
+// let range = {
+//   lower: 23,
+//   upper: 25
+// }
+
+   
+// let teenagers = arrayOfObjects.filter(function(person) {
+// 	return person.age >= this.lower && person.age <= this.upper;
+// }, range)
+
+// console.log(teenagers)
 
 // const Location = arrayOfObjects.filter(arrayOfObjects => arrayOfObjects.location === 'rahimabad');
 // console.log(Location);
@@ -56,7 +82,7 @@ var arrayOfObjects = [
 // // find helper
 // // using find helper to find the excat valve we need
 
-let findname = arrayOfObjects.find(function(user){
-    return user.names === "Ansar";
-});
-console.log(findname);
+// let findname = arrayOfObjects.find(function(user){
+//     return user.names === "Ansar";
+// });
+// console.log(findname);
