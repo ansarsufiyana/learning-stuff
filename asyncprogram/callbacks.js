@@ -1,3 +1,7 @@
+// // callback
+// // A caller of the function can pass another function as an argument to execute based on any trigger. 
+
+
 const posts = [
   { title: "post one", body: "this is post one" },
   { title: "post two", body: "this is post two" },

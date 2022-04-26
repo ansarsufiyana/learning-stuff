@@ -46,6 +46,10 @@ console.log(c);
 
 
 // // async and promises..
+// // promises
+// //A promise is a JavaScript construct that represents a future unknown value. Conceptually, 
+// //a promise is just JavaScript promising to return a value. It could be the result from an API call, 
+// //or it could be an error object from a failed network request. You're guaranteed to get something.
 
 const posts = [
   { title: "post one", body: "this is post one" },
@@ -85,6 +89,7 @@ createPost({ title: "Post Three", body: "This is post three" })
 
 
 // // async / await
+// //Async/Await is a way of writing promises that allows us to write asynchronous code in a synchronous way.
 
 // async function init(){
 //   await  createPost({ title: "Post Three", body: "This is post three" });

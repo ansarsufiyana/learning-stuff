@@ -71,6 +71,7 @@ var arrayOfObjects = [
 
 // // reduce
 // // using reduce helper to get the all names in the array
+// //
 
 // let namesAll = arrayOfObjects.reduce((nam, arrobj) => {
 //     nam.push(arrobj.names)
